@@ -1,0 +1,310 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  border: 1px solid var(--hairline);
+  padding: 1.75rem;
+  transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+
+.card:hover {
+  border-color: var(--color-dark);
+  box-shadow: var(--shadow-md);
+}
+
+/* --- variant footprints ---------------------------------------- */
+
+.standard {
+  grid-column: span 1;
+}
+
+.feature,
+.dark {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 1024px) {
+  .feature {
+    padding: 2.25rem;
+  }
+
+  .dark {
+    padding: 2.5rem;
+  }
+}
+
+.dark {
+  background-color: var(--color-steel);
+  color: var(--color-canvas);
+  border-color: var(--hairline);
+}
+
+.dark:hover {
+  border-color: var(--color-zinc-700);
+}
+
+/* --- split layout (feature + dark) ------------------------------ */
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .split {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .splitMedia {
+    grid-column: span 7 / span 7;
+  }
+
+  .splitCopy {
+    grid-column: span 5 / span 5;
+    height: 100%;
+  }
+}
+
+/* Mobile: image first in the dark panel too. */
+.dark .splitCopy {
+  order: 2;
+}
+
+.dark .splitMedia {
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  .dark .splitCopy {
+    order: 1;
+  }
+
+  .dark .splitMedia {
+    order: 2;
+  }
+}
+
+/* --- media ------------------------------------------------------ */
+
+.media {
+  margin-bottom: 1.5rem;
+}
+
+.split .media {
+  margin-bottom: 0;
+}
+
+.mediaFrame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-neutral-100);
+  border: 1px solid var(--hairline);
+}
+
+.feature .mediaFrame,
+.dark .mediaFrame {
+  aspect-ratio: 16 / 9;
+}
+
+.dark .mediaFrame {
+  background-color: var(--color-neutral-900);
+  border-color: var(--color-zinc-700);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter var(--dur-slow) ease, transform var(--dur-slow) ease,
+    opacity var(--dur-slow) ease;
+}
+
+.card:hover .image {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.dark .image {
+  filter: none;
+  opacity: 0.9;
+}
+
+.dark:hover .image {
+  opacity: 1;
+}
+
+/* --- tier badge -------------------------------------------------- */
+
+.tier {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: var(--color-dark);
+  color: var(--color-canvas);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  padding: 0.25rem 0.625rem;
+}
+
+.feature .tier {
+  background-color: var(--color-accent);
+  font-weight: 600;
+}
+
+.dark .tier {
+  top: 0.75rem;
+  right: 0.75rem;
+  left: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  color: var(--color-zinc-300);
+  border: 1px solid var(--color-zinc-700);
+}
+
+/* --- copy --------------------------------------------------------- */
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.headRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature .headRow,
+.dark .headRow {
+  align-items: center;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-dark);
+}
+
+@media (min-width: 1024px) {
+  .feature .name,
+  .dark .name {
+    font-size: 1.875rem;
+  }
+}
+
+.dark .name {
+  color: var(--color-canvas);
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-caption);
+  white-space: nowrap;
+}
+
+.dark .meta {
+  color: var(--color-zinc-400);
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(17, 19, 21, 0.7);
+  margin-bottom: 1rem;
+}
+
+.feature .subtitle {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.dark .subtitle {
+  color: var(--color-zinc-300);
+  font-weight: 600;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+.dark .description {
+  color: var(--color-zinc-400);
+}
+
+/* --- spec pills ---------------------------------------------------- */
+
+.specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.spec {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  padding: 0.25rem 0.625rem;
+  background-color: var(--color-canvas);
+  color: var(--color-dark);
+  border: 1px solid var(--hairline);
+}
+
+.dark .spec {
+  background-color: rgba(17, 19, 21, 0.6);
+  color: var(--color-zinc-300);
+  border-color: var(--color-zinc-700);
+}
+
+/* --- card CTA -------------------------------------------------------- */
+
+.cardCta {
+  color: var(--color-dark);
+}
+
+.card:hover .cardCta {
+  color: var(--color-accent);
+}
+
+.dark .cardCta {
+  color: var(--color-canvas);
+  border-top-color: var(--color-zinc-700);
+}
+
+.dark:hover .cardCta {
+  color: var(--color-canvas);
+}
+
+.dark .cardCta:hover {
+  color: var(--color-accent);
+}
+
+.ctaArrow {
+  width: 0.875rem;
+  height: 0.875rem;
+  transition: transform var(--dur-fast) ease;
+}
+
+.card:hover .ctaArrow {
+  transform: translateX(4px);
+}

@@ -1,0 +1,100 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-architectural);
+  font-weight: 600;
+  line-height: 1;
+  border: 1px solid transparent;
+  transition: background-color var(--dur-base) ease,
+    color var(--dur-base) ease, border-color var(--dur-base) ease;
+}
+
+.base :global(svg) {
+  flex: none;
+}
+
+/* --- sizes ---------------------------------------------------- */
+
+.sm {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+}
+
+.md {
+  padding: 1rem 2rem;
+  font-size: 0.75rem;
+}
+
+.lg {
+  padding: 1rem 2rem;
+  font-size: 0.75rem;
+}
+
+/* --- variants -------------------------------------------------- */
+
+.solid {
+  background-color: var(--color-dark);
+  color: var(--color-canvas);
+  border-color: var(--color-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.solid:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--color-dark);
+  border-color: var(--hairline);
+  gap: 0.5rem;
+}
+
+.ghost:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.white {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  border-color: var(--hairline);
+  gap: 0.5rem;
+}
+
+.white:hover {
+  background-color: var(--color-canvas);
+}
+
+/* Compact header CTA — bg-dark hover:bg-steel */
+.quiet {
+  background-color: var(--color-dark);
+  color: var(--color-canvas);
+  border-color: var(--color-dark);
+  box-shadow: var(--shadow-sm);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: var(--tracking-widest);
+  gap: 0.5rem;
+}
+
+.quiet:hover {
+  background-color: var(--color-steel);
+}
+
+/* Text-only card link with the hairline rule above it */
+.inline {
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 0 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  border-top: 1px solid var(--hairline);
+  border-radius: 0;
+  width: 100%;
+}

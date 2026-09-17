@@ -1,0 +1,40 @@
+/* Composable primitives. Import with `composes: x from '...'` in modules. */
+
+.shell {
+  width: 100%;
+  max-width: var(--shell-max);
+  margin-inline: auto;
+  padding-inline: var(--shell-pad);
+}
+
+@media (min-width: 1024px) {
+  .shell {
+    padding-inline: var(--shell-pad-lg);
+  }
+}
+
+.hairlineBorder {
+  border: 1px solid var(--hairline);
+}
+
+.hairlineTop {
+  border-top: 1px solid var(--hairline);
+}
+
+.hairlineBottom {
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* Mono micro-label used for eyebrows, pills and spec strings. */
+.monoLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-architectural);
+  line-height: 1.4;
+}
+
+.surface {
+  background-color: var(--color-white);
+  border: 1px solid var(--hairline);
+}
