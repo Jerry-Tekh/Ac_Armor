@@ -39,8 +39,8 @@
 
   /* Layout */
   --shell-max: 80rem; /* max-w-7xl */
-  --shell-pad: 1.5rem; /* px-6 */
-  --shell-pad-lg: 2.5rem; /* lg:px-10 */
+  --shell-pad: 2rem; /* px-8 */
+  --shell-pad-lg: 4rem; /* lg:px-16 */
   --header-height: 6rem; /* h-24 */
 
   /* Elevation */

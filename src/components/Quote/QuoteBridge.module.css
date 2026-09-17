@@ -1,5 +1,5 @@
 .section {
-  padding-block: 5rem;
+  padding-block: 7rem;
   background-color: var(--color-canvas-warm);
   border-top: 1px solid var(--hairline);
   scroll-margin-top: var(--header-height);

@@ -1,11 +1,11 @@
 .section {
-  padding-block: 6rem;
+  padding-block: 7.5rem;
   scroll-margin-top: var(--header-height);
 }
 
 @media (min-width: 1024px) {
   .section {
-    padding-block: 8rem;
+    padding-block: 10rem;
   }
 }
 
@@ -15,7 +15,7 @@
 
 .header {
   max-width: 48rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .eyebrow {
@@ -65,7 +65,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   scroll-margin-top: var(--header-height);
 }
 
@@ -77,6 +77,6 @@
 
 @media (min-width: 1024px) {
   .grid {
-    gap: 2.5rem;
+    gap: 3rem;
   }
 }
