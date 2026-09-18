@@ -3,6 +3,12 @@
  * rendered page is byte-for-byte the same copy, just driven by data.
  */
 
+import heroAcArmor from '../assets/img/hero-ac-armor.jpg';
+import armorI from '../assets/img/armor-i.jpg';
+import armorII from '../assets/img/armor-ii.jpg';
+import armorIII from '../assets/img/armor-iii.jpg';
+import commercialArmor from '../assets/img/commercial-armor.jpg';
+
 export const company = {
   name: 'AC Armor',
   legalName: 'A C Armor, LLC',
@@ -33,8 +39,7 @@ export const hero = {
   figureLabel: 'FIG 01.0 // AC ARMOR RESIDENTIAL CAGE',
   figureSpec: 'DUAL HASP • AIRFLOW TOLERANCE',
   image: {
-    src:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuD-oGQLvw_OKglZsKzcmWMdQN4tEPtSU1ALI2FevTH1KAXROPQQiIpV5gt2DvzLRX7vQzQACE7CLOwjxdqKcdbHeHftMj7hxv2bclAF4lsAufrlmULFJu5j6F57BS2zdZasaNsyPYDn29r7KJFf_SYP5RGKCc1slb9GVkQRzN7BUbqks9vKV_kyd95NKo-iX5vMrAqAMgFfAc2pgOBjhiIf7oMUH5DnBkDccnHgOsJRlo89QTYjl6ZV2g',
+    src: heroAcArmor,
     alt:
       'AC Armor powder-coated heavy-duty residential AC security cage enclosing condenser unit',
   },
@@ -91,8 +96,7 @@ export const products = [
     specs: ['Heavy Tubular Steel', 'Padlock Shroud', 'Airflow Optimized'],
     cta: { label: 'Explore Armor I', href: '#quote' },
     image: {
-      src:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuDRqPbKrcYkwO-ZJXiA5O8BAgpKmlcr3FnFjFc1fO1d91aUuvmlplaSuRdCr_DmpAu-Mw9IZi54Q5vEgaZgRrKM3KN-NyIw2csfSFPmkXMC6ITjO8jVif6WUjJQQqAk7D1DCLYvnaE0OsoHLn7X8KvtTiF9KDjld4HMx6wWeevxDRVnB1JtqmzxUm5C_7rWpCtN3Snn3gocTu5m_1XR67oYtiXr8koTjDHkVYth-9MJnCe9z8mjtM8dRA',
+      src: armorI,
       alt: 'Armor I Residential AC Steel Security Cage Enclosure',
     },
   },
@@ -108,8 +112,7 @@ export const products = [
     specs: ['Reinforced Spacing', 'Tamper Deflector', 'Concrete Anchor Flanges'],
     cta: { label: 'Explore Armor II', href: '#quote' },
     image: {
-      src:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuAQ_IBSqOCulR_aXofBANibk9ZGvj8GvPcKjoj--L-ZWOG6wk3ofkr3XFq4jtSwONul9Dhy4Ni2oUf9lQu_W_AT44QnpSQKxpXHnZ3jCIALV-ol2poK70gt4Y-PfU1JXcQE_fL8Yb_J9Kg5yiPzllLOIPc_3-HDT-KMLgG_jE07CteUnLZGV7v-3peUrknv-KtF5jpFeKzmue2CZ4wjonDX9NOg9cSR9Kw4ME19p73ETlBJ5vrkGYJ3kw',
+      src: armorII,
       alt: 'Armor II Reinforced AC Security Cage with tight steel bar spacing',
     },
   },
@@ -125,8 +128,7 @@ export const products = [
     specs: ['Expanded Steel Mesh', 'Anti-Pry Frame', 'Commercial Hasp'],
     cta: { label: 'Explore Armor III', href: '#quote' },
     image: {
-      src:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuBiRceCRP3woSz1Wa0VuRWbcdGTA2RE9rAlV3i8TXTXti8N3M-Bit-aKAG9nZNawAUUwZ621g2Xnn7BBKx-t7B5LZ5PyMBtfhkUX5vOgoeeO2RGy3ny9f1eqi_VMBQzLsEbXNreR0SO_rc6DSw108_MPfb1ae9ZxfOFb9Tx5wK3n10JyvgKhD6zh1vcXWi3EoawZJRrpKK8W4fyWws1Gc8HgLpkGyXxLLdTTxVieysjDjc5SBMcndkHtQ',
+      src: armorIII,
       alt: 'Armor III Heavy Duty AC Security Cage with Expanded Steel Mesh',
     },
   },
@@ -146,8 +148,7 @@ export const products = [
     ],
     cta: { label: 'Discuss Commercial Project', href: '#contact' },
     image: {
-      src:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuALIsRfMyKWo4aE1I0Ce806azdLIsr798RMkkuZLXHuzHYo8IQMv7tyypr0gTGPHINwFly7JVYNa2b1bxBTGpHT0CyifDJIfZIgJMTuSKOYONs3F1al3VNXzRPGiNOsOhEC2F0QkcPz5kViHnMaPmN6OlTkjBkI8dsarNIcEav41wN0m560YGdiUZqLl8k8lBv9ZFNqJBa6o6FEG2xUC5SEZy_DEg68_zpRzBTFs5WT8aJzar-PHuFwlQ',
+      src: commercialArmor,
       alt:
         'Commercial Rooftop HVAC Steel Cages Protecting Industrial Condensers',
     },

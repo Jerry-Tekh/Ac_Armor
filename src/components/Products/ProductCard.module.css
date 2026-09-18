@@ -6,6 +6,7 @@
   border: 1px solid var(--hairline);
   padding: 1.75rem;
   transition: border-color 300ms ease, box-shadow 300ms ease;
+  
 }
 
 .card:hover {

@@ -62,11 +62,13 @@
   }
 }
 
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   scroll-margin-top: var(--header-height);
+  
 }
 
 @media (min-width: 768px) {
