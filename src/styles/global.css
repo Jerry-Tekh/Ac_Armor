@@ -40,8 +40,8 @@ html.lenis body {
 body {
   min-height: 100vh;
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--color-dark);
   background-color: var(--color-canvas);
   -webkit-font-smoothing: antialiased;
