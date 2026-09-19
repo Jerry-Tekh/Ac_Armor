@@ -37,15 +37,15 @@
 /* --- variants -------------------------------------------------- */
 
 .solid {
-  background-color: var(--color-dark);
-  color: var(--color-canvas);
-  border-color: var(--color-dark);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
   box-shadow: var(--shadow-md);
 }
 
 .solid:hover {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
 }
 
 .ghost {
@@ -72,9 +72,9 @@
 
 /* Compact header CTA — bg-dark hover:bg-steel */
 .quiet {
-  background-color: var(--color-dark);
-  color: var(--color-canvas);
-  border-color: var(--color-dark);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
   box-shadow: var(--shadow-sm);
   padding: 0.75rem 1.5rem;
   font-size: 0.75rem;
@@ -83,7 +83,7 @@
 }
 
 .quiet:hover {
-  background-color: var(--color-steel);
+  background-color: var(--color-dark);
 }
 
 /* Text-only card link with the hairline rule above it */
