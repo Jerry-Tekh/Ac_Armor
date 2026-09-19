@@ -117,6 +117,17 @@
   display: none;
 }
 
+.quoteButton.quoteButton {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.quoteButton.quoteButton:hover {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
 @media (min-width: 640px) {
   .quoteButton {
     display: inline-flex;
