@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import TrustBand from './components/TrustBand/TrustBand';
 import ProductCatalog from './components/Products/ProductCatalog';
 import QuoteBridge from './components/Quote/QuoteBridge';
+import Faq from './components/Faq/Faq';
 import SiteFooter from './components/Footer/SiteFooter';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Hero />
         <TrustBand />
         <ProductCatalog />
+        <Faq />
         <QuoteBridge />
       </main>
 

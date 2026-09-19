@@ -155,6 +155,44 @@ export const products = [
   },
 ];
 
+export const faq = {
+  eyebrow: 'FIELD QUESTIONS // INSTALLATION & ACCESS',
+  heading: 'Answers Before We Measure Your Site.',
+  body:
+    'Clear answers on airflow, service access, fit, and the protection level that best matches your equipment and property.',
+  items: [
+    {
+      question: 'Will an AC Armor cage restrict my condenser’s airflow?',
+      answer:
+        'No. Each cage is designed around the equipment footprint with open structural spacing so the condenser can draw and discharge air as intended. We confirm the unit and pad dimensions before fabrication.',
+    },
+    {
+      question: 'Can an HVAC technician service the unit without removing the cage?',
+      answer:
+        'Yes. Service clearance is a core part of the design. The cage provides controlled access for routine maintenance while keeping the condenser protected when the technician is not on site.',
+    },
+    {
+      question: 'Does one AC security cage fit every outdoor unit?',
+      answer:
+        'No. Condensers, pads, line-set locations, and surrounding clearance vary from property to property. AC Armor uses site measurements to match the cage to the actual installation.',
+    },
+    {
+      question: 'When should I choose Armor III instead of Armor I or II?',
+      answer:
+        'Armor III is intended for higher-risk locations where expanded steel mesh and reinforced framing add a stronger physical barrier. It is a good fit for equipment exposed to public access or repeated tampering risk.',
+    },
+    {
+      question: 'Can you protect several commercial HVAC units in one installation?',
+      answer:
+        'Yes. Commercial configurations can be planned for multi-unit banks, rooftop equipment, and other high-exposure layouts. The final design is based on the equipment arrangement and service requirements.',
+    },
+    {
+      question: 'What information do I need before requesting a quote?',
+      answer:
+        'A condenser footprint or clear site measurements are the best starting point. A property address also helps us understand the location and prepare for an accurate structural cage recommendation.',
+    },
+  ],
+};
 export const quote = {
   eyebrow: 'PHYSICAL ASSET PROTECTION',
   heading: 'Request an AC Armor Precision Estimate',
