@@ -28,6 +28,9 @@
 .feature,
 .dark {
   grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
 }
 
 @media (min-width: 1024px) {
@@ -118,8 +121,6 @@
   aspect-ratio: 16 / 10;
   background-color: var(--color-neutral-100);
   border: 1px solid var(--hairline);
-  max-width: 100%;
-  overflow-wrap: anywhere;
 }
 
 .feature .mediaFrame,
